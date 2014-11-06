@@ -1,5 +1,5 @@
 
-#import "CDVCameracheck.h"
+#import "CDVStatusBar.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <AVFoundation/AVFoundation.h>
 

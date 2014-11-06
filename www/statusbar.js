@@ -1,6 +1,6 @@
 var StatusBar =  {}
 
-StatusBar.checkCamera = function(success, error) {
+StatusBar.getStatusBar = function(success, error) {
   cordova.exec(
     success,
     error,
