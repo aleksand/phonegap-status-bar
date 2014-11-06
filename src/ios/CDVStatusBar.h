@@ -1,12 +1,12 @@
 #import <Cordova/CDV.h>
 
-@interface CDVStatusBar : CDVPlugin  {
+@interface CDVStatusBarControl : CDVPlugin  {
   // Member variables go here.
 }
 
 @property(strong) NSString* callbackID;
 
-- (void)getStatusBar:(CDVInvokedUrlCommand*)command;
+- (void)getStatusBarControl:(CDVInvokedUrlCommand*)command;
 - (void)setListener:(CDVInvokedUrlCommand*)command;
 
 @end
