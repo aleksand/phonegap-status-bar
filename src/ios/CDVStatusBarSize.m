@@ -6,7 +6,7 @@
 @implementation CDVStatusBarSize
 
 - (void)pluginInitialize {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(StatusBarFrameWillChange:) name:UIApplicationWillChangeStatusBarFrameNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarFrameWillChange:) name:UIApplicationWillChangeStatusBarFrameNotification object:nil];
 }
 
 - (void)getCurrentSize:(CDVInvokedUrlCommand*)command
