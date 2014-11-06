@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.iq-logic.contexta.cameracheck" version="0.0.1">
+    <name>StatusBar</name>
+    <description>StatusBar Check Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>status bar,check</keywords>
+    <js-module src="www/statusbar.js" name="statusbar">
+        <clobbers target="window.StatusBar" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="StatusBar">
+                <param name="ios-package" value="CDVStatusBar"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVStatusBar.h" />
+        <source-file src="src/ios/CDVStatusBar.m" />
+    </platform>
+</plugin>
