@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.iq-logic.contexta.statusbarcontrol" version="0.0.1">
-    <name>StatusBarControl</name>
-    <description>StatusBarControl Check Plugin</description>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.iq-logic.contexta.statusbarsize" version="0.0.1">
+    <name>StatusBarSize</name>
+    <description>StatusBarSize Check Plugin</description>
     <license>Apache 2.0</license>
     <keywords>status bar,check</keywords>
-    <js-module src="www/statusbarcontrol.js" name="statusbarcontrol">
-        <clobbers target="window.StatusBarControl" />
+    <js-module src="www/statusbarsize.js" name="statusbarsize">
+        <clobbers target="window.statusBarSize" />
     </js-module>
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="StatusBarControl">
-                <param name="ios-package" value="CDVStatusBarControl"/>
+            <feature name="StatusBarSize">
+                <param name="ios-package" value="CDVStatusBarSize"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/CDVStatusBarControl.h" />
-        <source-file src="src/ios/CDVStatusBarControl.m" />
+        <header-file src="src/ios/CDVStatusBarSize.h" />
+        <source-file src="src/ios/CDVStatusBarSize.m" />
     </platform>
 </plugin>
