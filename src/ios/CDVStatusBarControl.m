@@ -13,7 +13,7 @@
 
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
 
-    NSLog(@"check photos access: %ld", authStatus);
+    NSLog(@"check photos access:");
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
@@ -41,7 +41,7 @@
 
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"No camera access"];
 
-    NSLog(@"check camera result %ld", authStatus);
+    NSLog(@"check camera result");
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
